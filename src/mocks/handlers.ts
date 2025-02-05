@@ -1,7 +1,7 @@
 import { http, HttpResponse } from "msw";
 
 export const handlers = [
-  http.get("/api/hello", () => {
-    return HttpResponse.json({ message: "Hello World!" });
+  http.post("/api/login", async () => {
+    return HttpResponse.json({ message: "Login successful!" }, { status: 200 });
   }),
 ];
