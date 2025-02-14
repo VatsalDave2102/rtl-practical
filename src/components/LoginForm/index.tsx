@@ -73,7 +73,7 @@ const LoginForm = () => {
             name="password"
             onChange={(e) => handleFieldChange("password", e.target.value)}
           />
-          <button onClick={() => setShowPassword(!showPassword)}>
+          <button onClick={() => setShowPassword(!showPassword)} type="button">
             {showPassword ? "Hide" : "Show"}
           </button>
         </label>
